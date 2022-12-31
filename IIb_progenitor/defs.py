@@ -1,3 +1,6 @@
+import pkg_resources
+DATA_PATH = pkg_resources.resource_filename('IIb_progenitor', 'data/')
+
 Z_list=[0.005,0.02]
 eps_list=[0.1,0.5]
 

@@ -1,6 +1,6 @@
-from main import Supernova
+from IIb_progenitor import main
 
-SN=Supernova('2016gkg',26.4,5.3,
+SN=main.Supernova('2016gkg',26.4,5.3,
               [23.41,23.08,23.29],
               [0.47,0.33,0.59],
               ['wfpc2,2,f450w,a2d7,cont#50180',

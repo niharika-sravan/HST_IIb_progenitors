@@ -22,7 +22,7 @@ from synphot.models import BlackBodyNorm1D
 from synphot import Observation
 import stsynphot as stsyn
 
-import defs
+from IIb_progenitor import defs
 
 class Supernova():
   def __init__(self,ID:str,distance:float,distance_uncer:float,mags:list,mag_uncers:list,obsmode:list,
@@ -161,7 +161,7 @@ class Supernova():
       self.mod_props=pd.DataFrame()
       for Z_ in defs.Z_list:
         for eps_ in defs.eps_list:
-          data=pd.read_csv('data/IIb_props_'+str(Z_)+'_'+str(eps_)+'.csv')
+          data=pd.read_csv(defs.DATA_PATH+'IIb_props_'+str(Z_)+'_'+str(eps_)+'.csv')
           for bp_str in self.obsmode:
             data[bp_str]=''
             data['Z']=Z_
