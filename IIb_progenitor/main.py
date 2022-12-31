@@ -30,7 +30,7 @@ class Supernova():
               ntst_ext:list=[],mw_ext:list=[],
               Z:float=None,mt_eff:float=None,
               envM_const:list=[],R_const:list=[],coreM_const:list=[],Mdot_vwind_const:list=[],
-              outdir:str='output'
+              outdir:str='.'
               ):
     """
     Class that records all properties including output posteriors
@@ -73,7 +73,7 @@ class Supernova():
             [lower,upper]. Skip one value to use as upper or lower limit [None,upper]
         ignored if None or list empty
 
-    outdir: path to folder where outputs need to be written
+    outdir: path to folder where outputs need to be written. Default is current directory
 
     Usage:
     ------
