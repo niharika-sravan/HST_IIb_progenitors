@@ -46,3 +46,7 @@ In the folder you want the results in:
 ```
 
 See main.py for more examples.
+
+## Acknowledgement
+
+This work is supported by NASA award number HST-AR-16154.
