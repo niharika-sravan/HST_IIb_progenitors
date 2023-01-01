@@ -79,7 +79,7 @@ class Supernova():
     ------
     Define the progenitor properties.
     Minimal intialization:
-    >>> from main import Supernova
+    >>> from IIb_progenitor import main
     >>> SN=Supernova('2016gkg',26.4,5.3,
               [23.41,23.08,23.29],
               [0.47,0.33,0.59],
